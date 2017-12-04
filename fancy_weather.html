@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Animated Weather App</title>
+
+  <!-- CSS -->
+  <link href="css\fancy_weather.css" rel="stylesheet">
+
+  <!-- JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700i,800,900" rel="stylesheet">
+
+  <!-- ICONS -->
+  <link href="icons\font-awesome-4.7.0 (2)\font-awesome-4.7.0\css\font-awesome.min.css" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+  <div class="app-container">
+
+    <!-- TOP HALF / MENU-->
+
+    <div class="app-menu">
+      <div class="menu-temp">
+          <div class="temp-day temp-today">26°</div>
+          <div class="temp-day temp-tomorrow">32°</div>
+          <div class="temp-day temp-friday">24°</div>
+      </div>
+      <div class="menu-week">
+
+        <div class="day day-today">
+          <div class="day-symbol">
+            <i class="fa fa-cloud" aria-hidden="true"></i>
+          </div>
+          <div class="day-title">Today</div>
+        </div>
+
+        <div class="day day-tomorrow">
+          <div class="day-symbol">
+            <i class="fa fa-sun-o" aria-hidden="true"></i>
+          </div>
+          <div class="day-title">Tomorrow</div>
+        </div>
+
+        <div class="day day-friday">
+          <div class="day-symbol">
+            <i class="fa fa-envira" aria-hidden="true"></i>
+          </div>
+          <div class="day-title">Friday</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- BOTTOM HALF / ANIMATION -->
+
+    <div class="animation-container">
+      <div class="animation-inner-container">
+
+
+        <!-- Rain Animation -->
+        <div class="rain-animation">
+
+          <!-- Inner Rain Animation Box -->
+          <div class="rain-inner-animation">
+
+            <!-- Generator: Adobe Illustrator 21.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg version="1.1" id="rainclouds" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	 viewBox="0 0 1341 252" style="enable-background:new 0 0 1341 252;" xml:space="preserve">
+            <style type="text/css">
+            	.raincloud-2{fill:#C1C6D1;}
+            	.raincloud-1{fill:#B1B6BF;}
+            	.raincloud-0{fill:#D3D9E3;}
+            </style>
+            <path class="raincloud-2" d="M217.5,225.5c55,0,247,7,310-83c57,56,175,89,261,29s119-93,110-164c-8.8-69.1-103-57-103-57h-773
+            	C22.5-49.5-54.5,225.5,217.5,225.5z"/>
+            <path class="raincloud-1" d="M1068.9,215c-76.2,0-342.2,7-429.5-83c-79,56-242.4,89-361.6,29S113,68,125.5-3c12.2-69.1,142.7-57,142.7-57
+            	h1070.9C1339.1-60,1445.7,215,1068.9,215z"/>
+            <path class="raincloud-0" d="M0,154c0,0,606,60,1027-182c0,1-1027,0-1027,0V154z"/>
+            </svg>
+
+            <div class="rainstartpos-inner"></div>
+          </div>
+          <!-- Outer Rain Animation Box -->
+          <div class="rain-outer-animation">
+            <div class="rainstartpos-outer"></div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <script src="js\fancy_weather.js"></script>
+
+</body>
+
+
+
+</html>
